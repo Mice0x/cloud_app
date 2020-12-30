@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ssh/ssh.dart';
+import 'package:cloud_app/home_cloud.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -8,9 +8,10 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   void login_ftp() {
-    var client = new SSHClient(
-        host: "10.0.0.6", port: 23, username: "pi", passwordOrKey: "12345");
-    client.connect();
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomeCloud()),
+    );
   }
 
   @override

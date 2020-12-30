@@ -22,6 +22,7 @@ environment:
 
 dependencies:
   ssh: ^0.0.7
+  back_button_interceptor: ^4.4.0
   flutter:
     sdk: flutter
 
